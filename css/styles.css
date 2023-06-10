@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #d9d9d9;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header ul li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    font-size: 25px;
+}
+
+header ul li a:link{
+    color: black;
+}
+
+header ul li a:visited{
+    color: black;
+}
+
+h3{
+    color: #708876;
+    font-size: 40px;
+}
+
+h4{
+    color: gray;
+    font-size: 30px;
+}
+
+
+
+header ul li a:hover{
+    color: #001E6C;
+    font-size: 30px;
+    border-radius: 57px;
+    text-shadow:  19px 19px 72px #b2b2b2,
+                -19px -19px 72px #ffffff;
+                
+}
+/************************MANEJO DE USUARIOS**************************/
+/*Botones link a las otras pags*/
+
+.manejo_usuarios{             /*contenedor*/
+    display: flex;
+    justify-content: center;          /*que este en medio horizontalmente*/
+    align-items: center;              /*en medio verticalmente*/
+}
+
+.logout{
+	color: red;
+}
+
+.boton_manejo_usuarios{               
+    margin: 20px;
+    border-radius: 57px;
+    padding: 25px;
+    transition: 0.5s;                /*para que la animacion del hover no sea de jalon*/
+}
+
+.contenido .manejo_usuarios .boton_manejo_usuarios a{           /*hacemos referencia solo a los links que estan dentro de las secciones antes del a*/
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contenido .manejo_usuarios .boton_manejo_usuarios a:hover{
+    color: #001E6C;
+    font-size: .3vw;
+}
+
+.boton_manejo_usuarios:hover{
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow:  19px 19px 72px #b2b2b2,
+             -19px -19px 72px #ffffff;
+    padding: 15px;
+}
+
+
+/************************ALTA DE USUARIOS*******************************************/
+.alta_usuarios{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+
+.alta_usuarios label, .alta_usuarios fieldset, .alta_usuarios button{                   /*Que los labels que estan dentro de alta_usuarios tengan estas caracteristicas*/
+    font-size: 1.5vw;
+    color: rgb(81, 81, 81);
+}
+
+.input{
+    width: 45vw;
+    display: block;
+    margin: 20px;
+    margin-bottom: 40px;
+    border-radius: 57px;
+    box-shadow:  15px 15px 72px #b2b2b2,
+             -15px -15px 72px #ffffff;
+    padding: 20px;
+}
+
+.caja_radio_usuarios{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 50px;
+    box-shadow:  15px 15px 72px #b2b2b2,
+             -15px -15px 72px #ffffff;
+    padding: 20px;
+}
+
+.boton_guardar{
+    border: none;
+    width: 25vw;
+    text-align: center;
+    border-radius: 57px;
+    background: #d9d9d9;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.boton_guardar:hover{
+    font-size: 1.8vw;
+    color: #001E6C;
+    background-color: #d9d9d9;
+    box-shadow:  19px 19px 72px #b2b2b2,
+                -19px -19px 72px #ffffff;
+}
+
+.boton_regresar{
+    color: rgb(81, 81, 81);
+    border: none;
+    width: 25vw;
+    text-align: center;
+    border-radius: 57px;
+    background: #d9d9d9;
+    margin-top: 5vh;
+    margin-left: 0;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.contenido .boton_regresar a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+    transition: 0.5s;
+}
+
+.boton_regresar:hover, .boton_regresar a:hover{
+    font-size: 1.8vw;
+    color: #001E6C;
+    background-color: #d9d9d9;
+    box-shadow:  19px 19px 72px #b2b2b2,
+                -19px -19px 72px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+/*************************FOOTER****************************************/
+
+footer{
+    color: #3c538c;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cuest{
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    outline: none;
+    width: 250px;
+    height: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+script .blog{
+    margin-top: 300px;
+}
+
+.logo1, .logo2{
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+
+header nav li{
+    display: inline-block;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    padding-top: 130px;
+    color: #001E6C;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bloque, .bloque2{
+    
+    text-align: center;
+    border-radius: 57px;
+    background: #d9d9d9;
+    box-shadow:  19px 19px 72px #b2b2b2,
+             -19px -19px 72px #ffffff;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.bloque2{
+    display: flex;
+}
+iframe{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+.bloque h2, .bloque2 h2{
+    font-size: 60px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease 0s;
+
+}
+
+.bloque h2:hover{
+    color: #001E6C;
+    
+}
+
+.bloque p, .bloque a{
+    font-size: 25px;
+    color: gray;
+}
+    
+
+.bloque .objetivos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+}
+
+.bloque .objetivos img{
+    width: 250px;
+}
+
+.bloque .objetivos img:hover{
+    width: 270px;
+    transition: all 0.3s ease 0s;
+
+}
+
+.bloque .objetivos .obj{
+    margin: 20px;
+    border-radius: 57px;
+    box-shadow:  19px 19px 72px #b2b2b2,
+             -19px -19px 72px #ffffff;
+    padding: 25px;
+}
+.bloque .links{
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.links:link{
+    color: gray;
+}
+.links:visited{
+    color: gray;
+}
+
+.galeriadiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria{
+    width: 550px;
+    margin: 20px;
+}
+
+footer{
+    background: black;
+    text-align: center;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.objetivos .obj a {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    
+  }
+
+  .objetivos .obj a:hover {
+    background-size: 100% 88%;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+@media only screen and (max-width: 800px){
+    
+    header{
+        flex-direction: column;
+    }
+    header nav li {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo2, .logo1{
+        width: 150px;
+    }
+    .logo2:nth-child(3){
+        order: -1;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .bloque{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /*width: 60%;*/
+    }
+    .bloque .objetivos .obj img{
+        width: 250px;
+    }
+
+    .camion1{
+        width: 300px;
+    }
+
+    .bloque, .bloque2{
+        margin-left: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 1280px){
+
+    .logo2{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+}
+

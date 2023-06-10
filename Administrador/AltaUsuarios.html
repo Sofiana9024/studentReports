@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    
+    <script type="text/javascript">
+        var vsid = "si21315";
+        (function() { 
+        var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+        vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.virtualspirits.com/vsa/chat.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+        })();
+    </script>
+   
+    <title>Manejo de Usuarios</title>
+</head>
+<body>
+    <header class="navbar">
+        <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img src="../img/logoNoF.png" alt="Logotipo UPSLP" class="logo1">
+        <nav>
+            <ul>
+                <li><a href="index_Admin.html">Usuarios</a></li> 
+                <li><a href="#">Kardex</a></li>
+                <li><a href="#">Plan de Estudios</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+        <img src="img/logo_personal.png" alt="" class="logo2">
+    </header>
+
+    <h1>Alta de Usuarios</h1>
+    
+    <div class="contenido">                         
+        <div class="bloque">
+            <form action="altaUsuario.php" class="alta_usuarios" method="post">
+                <label for="nu_usuario">Nuevo Usuario</label>       <!--nu = nuevo usuario -->
+                <input type="text" id="nu_usuario" name="nu_usuario" class="input" required>
+
+                <label for="nu_password">Password</label>
+                <input type="password" id="nu_password" name="nu_password" class="input" required>
+
+                <fieldset class="caja_radio_usuarios">
+                    <legend>Tipo de Usuario</legend>
+                    <label for="radio-admin"><input type="radio"  name="tipoUsuario" value="Administrador" id="radio-admin">Administrador</label>
+                    <label for="radio-profesor"><input type="radio"  name="tipoUsuario" value="Profesor" id="radio-profesor">Profesor</label>
+                    <label for="radio-coordinador"><input type="radio"  name="tipoUsuario" value="Coordinador" id="radio-coordinador">Coordinador</label>
+                    <label for="radio-tutor"><input type="radio"  name="tipoUsuario" value="Tutor" id="radio-tutor">Tutor</label>
+                    <label for="radio-alumno"><input type="radio"  name="tipoUsuario" value="Alumno" id="radio-alumno">Alumno</label>
+                </fieldset>
+                
+                <input class="boton_guardar" type="submit" value="Guardar">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <button class="boton_regresar"><a href="index_Admin.html">Regresar</a></button>
+    </div>
+    
+    </div>
+
+    <footer>
+        <p>Sitio creado por Raul Reyes Urbina & Ana Sofía Rodríguez</p>
+    </footer>
+</body>
+</html>
